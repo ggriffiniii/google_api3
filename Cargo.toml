@@ -1,0 +1,15 @@
+[workspace]
+members = ["google_api3_derive"]
+
+[package]
+name = "google_api3"
+version = "0.1.0"
+authors = ["Glenn Griffin <ggriffiniii@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+google_api3_derive = { path = "google_api3_derive", "version" = "0.1.0" }
+serde = { version = "1.0", features = ["derive"] }
+
+[dev-dependencies]
+chrono = { version = "0.4", features = ["serde"] }
